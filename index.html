@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505"><meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Каталог фортепианных переложений Валентины Кевры.">
+  <title>валентина кевра — ноты</title>
+  <script src="theme.js"></script>
+  <link rel="icon" href="assets/avatar.jpg"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="themes.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalog">к нотам</a>
+  <div class="atmosphere" aria-hidden="true"><div class="light-field"></div><div class="liquid-orbit orbit-one"></div><div class="liquid-orbit orbit-two"></div></div>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="#top" aria-label="валентина кевра, в начало"><img src="assets/avatar.jpg" alt="" width="44" height="44"><span>валентина<br>кевра</span></a>
+      <nav aria-label="каталог"><a href="#catalog" class="nav-link">ноты</a><button class="nav-link" data-view="favorites" aria-pressed="false">избранное <span id="favorite-count">0</span></button><a class="nav-link" href="https://t.me/Keura_Valentina" target="_blank" rel="noopener noreferrer">уроки</a></nav>
+      <div class="header-actions"><button id="theme-toggle" class="theme-toggle" aria-label="включить светлую тему" aria-pressed="false" title="включить светлую тему"><span class="theme-symbol" aria-hidden="true"></span></button><button id="motion-toggle" class="motion-toggle" aria-label="уменьшить анимацию" aria-pressed="false" title="уменьшить анимацию"><span class="motion-symbol" aria-hidden="true"></span></button></div>
+    </header>
+    <main id="top">
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <h1 id="intro-title"><span class="line"><span>твоя</span></span><span class="line"><span>музыка.</span></span></h1>
+          <p>ноты для фортепиано</p>
+        </div>
+        <div class="hero-object motion-frame" data-strength="1.35">
+          <button class="score-stack" id="featured" aria-label="открыть Una Mattina">
+            <span class="glass-lens" aria-hidden="true"></span>
+            <span class="paper paper-back"><img src="assets/somewhere.jpg" alt="" width="575" height="625"></span>
+            <span class="paper paper-mid"><img src="assets/river.jpg" alt="" width="576" height="625"></span>
+            <span class="paper paper-front"><img src="assets/una-mattina.jpg" alt="образец нот Una Mattina" width="560" height="607"></span>
+            <span class="floating-label glass"><span>una mattina</span><span class="round-plus" aria-hidden="true"></span></span>
+          </button>
+        </div>
+      </section>
+      <section id="catalog" class="catalog" aria-labelledby="catalog-title">
+        <div class="catalog-heading"><h2 id="catalog-title">ноты</h2><span id="result-count" role="status" aria-live="polite">загрузка…</span></div>
+        <div class="controls glass">
+          <div class="levels" role="group" aria-label="уровень сложности"><button data-level="all" class="selected" aria-pressed="true">все</button><button data-level="easy" aria-pressed="false">простой</button><button data-level="medium" aria-pressed="false">средний</button><button data-level="hard" aria-pressed="false">сложный</button></div>
+          <label class="video-filter"><input id="video-only" type="checkbox"><span>с видеоразбором</span></label>
+        </div>
+        <div id="results" class="score-grid" aria-busy="true"><div class="state glass"><p>загружаем ноты…</p></div></div>
+      </section>
+    </main>
+    <footer><a href="https://boosty.to/piano_with_valentina" target="_blank" rel="noopener noreferrer">все ноты на boosty</a><span>пример каталога</span><a href="https://t.me/Keura_Valentina" target="_blank" rel="noopener noreferrer">написать валентине</a></footer>
+  </div>
+  <dialog id="detail" aria-labelledby="detail-title"><button class="close-detail" id="close-detail" aria-label="закрыть произведение"><i class="close-icon" aria-hidden="true"></i></button><div id="detail-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">для каталога нужен javascript. <a href="https://boosty.to/piano_with_valentina">открыть ноты на boosty</a></p></noscript>
+</body>
+</html>
